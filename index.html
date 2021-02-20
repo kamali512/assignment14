@@ -1,0 +1,226 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row mt-5">
+        <div class="col-md-4">
+          <h4 class="text-center text-success">Card Hide Function</h4>
+          <h6 class="text-center text-danger" id="creditresult"></h6>
+          <form>
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="number"
+                min="16"
+                max="16"
+                placeholder="Enter Credit number"
+                id="credit"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="button"
+                class="btn btn-primary"
+                value="Hide credit number"
+                onclick="hidecredit()"
+              />
+            </div>
+          </form>
+        </div>
+        <div class="col-md-4">
+          <h4 class="text-center text-success">
+            Count number of potatoes in string
+          </h4>
+          <h6 class="text-center text-danger" id="presult"></h6>
+          <form>
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="text"
+                placeholder="Enter String"
+                id="pstring"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="button"
+                class="btn btn-primary"
+                value="Count"
+                onclick="countp()"
+              />
+            </div>
+          </form>
+        </div>
+        <div class="col-md-4">
+          <h4 class="text-center text-success">Double char</h4>
+          <h6 class="text-center text-danger" id="dresult"></h6>
+          <form>
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="text"
+                placeholder="Enter string"
+                id="dstr"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                class="btn btn-primary"
+                type="button"
+                value="double "
+                onclick="doublechar()"
+              />
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-md-4">
+          <h4 class="text-center text-success">Calculate Gross Salary</h4>
+          <h6 id="sresult" class="text-center text-danger"></h6>
+          <form>
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="number"
+                min="0"
+                placeholder="Enter Basic Salary"
+                id="s"
+              />
+            </div>
+
+            <div class="form-group">
+              <input
+                type="button"
+                class="btn btn-primary"
+                value="Calculate "
+                onclick="csalary()"
+              />
+            </div>
+          </form>
+        </div>
+        <div class="col-md-4">
+          <h4 class="text-center text-success">Bill Calculation</h4>
+          <h6 id="uresult" class="text-center text-danger"></h6>
+          <form>
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="number"
+                placeholder="Enter Unit "
+                id="unit"
+                min="0"
+              />
+            </div>
+
+            <div class="form-group">
+              <input
+                type="button"
+                class="btn btn-primary"
+                value="Calculate bill"
+                onclick="bill()"
+              />
+            </div>
+          </form>
+        </div>
+        <div class="col-md-4">
+          <h4 class="text-center text-success">
+            Multiple of 3 and 5 below 1000
+          </h4>
+          <h6 id="mresult" class="text-center text-danger"></h6>
+          <form>
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="number"
+                placeholder="Enter Limit "
+                id="limit"
+                min="0"
+                max="999"
+              />
+            </div>
+
+            <div class="form-group">
+              <input
+                type="button"
+                class="btn btn-primary"
+                value="Calculate mutiples "
+                onclick="multiples()"
+              />
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-md-4">
+          <h4 class="text-center text-success">countRepetitions</h4>
+          <h6 id="rresult" class="text-center text-danger"></h6>
+          <form>
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="number"
+                min="1"
+                placeholder="Enter number of elements u want to add in array"
+                id="re"
+              />
+            </div>
+
+            <div class="form-group">
+              <input
+                type="button"
+                class="btn btn-primary"
+                value="add elents to count"
+                onclick="countr()"
+              />
+            </div>
+          </form>
+        </div>
+        <div class="col-md-4">
+          <h4 class="text-center text-success">Count chars in string</h4>
+          <h6 id="csresult" class="text-center text-danger"></h6>
+          <form>
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="text"
+                maxlength="1"
+                placeholder="Enter character you want search"
+                id="ch"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="text"
+                placeholder="Enter string from which want search"
+                id="stri"
+              />
+            </div>
+
+            <div class="form-group">
+              <input
+                type="button"
+                class="btn btn-primary"
+                value="count"
+                onclick="chcount()"
+              />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
